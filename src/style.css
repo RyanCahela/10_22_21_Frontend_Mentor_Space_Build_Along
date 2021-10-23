@@ -1,23 +1,88 @@
+/**************************
+Custom Properties
+**************************/
+:root {
+  /* Color */
+  --color-dark: hsl(230, 35%, 7%);
+  --color-light: hsl(231,77%,90%);
+  --color-white: hsl(0, 0%, 100%);
+
+  /* Typography */
+  --bellefair: 'Bellefair', serif;
+  --barlow-condensed: 'Barlow Condensed', sans-serif;
+  --barlow: 'Barlow', sans-serif;
+
+  --font-size: 1rem;
+  --font-family: var(--barlow);
+}
+
 html {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: var(--font-family);
+  text-transform: uppercase;
 }
 
 body {
-  background-color: navy;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--bellefair);
 }
 
 h1 {
-  color: whitesmoke;
+  font-size: 9.375rem;
 }
 
-.big-gap {
-  gap: 5rem;
+h2 {
+  font-size: 6.25rem;
 }
 
-.box {
-  background: dimgray;
-  width: 100px;
-  height: 100px;
-  font-size: 3rem;
-  color: white;
+h3 {
+  font-size: 3.5rem;
 }
+
+h4 {
+  font-size: 2rem;
+}
+
+h5,h6 {
+  font-size: 1.75rem;
+  --font-family: var(--barlow-condensed);
+}
+
+h6 {
+  font-size: 0.875rem;
+  letter-spacing: 2.35px;
+}
+
+p {
+  text-transform: none;
+  --font-family: var(--barlow);
+  font-size: 1.125rem;
+}
+
+button {
+  font-size: 2rem;
+  padding-inline: 4rem;
+  padding-block: 7.375rem;
+  border-radius: 50%
+}
+
+nav {
+  font-size: 1rem;
+}
+
+.metric {
+  --font-size: 1.75rem;
+}
+
+.nav-text {
+  --font-size: 1rem;
+  --font-family: var(--barlow-condensed);
+  letter-spacing: 2.7px;
+}
+
