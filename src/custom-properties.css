@@ -1,0 +1,25 @@
+/**************************
+Custom Properties
+**************************/
+:root {
+  /* Color */
+  --color-dark: 230 35% 7%;
+  --color-accent: 231 77% 90%;
+  --color-white: 0 0% 100%;
+
+  /* Typography */
+  /* font families */
+  --ff-serif: "Bellefair", serif;
+  --ff-sans-condensed: "Barlow Condensed", sans-serif;
+  --ff-sans-normal: "Barlow", sans-serif;
+
+  /* font sizes */
+  --fs-200: 0.875rem;
+  --fs-300: 1rem;
+  --fs-400: 1.125rem;
+  --fs-500: 1.75rem;
+  --fs-600: 2rem;
+  --fs-700: 3.5rem;
+  --fs-800: 6.25rem;
+  --fs-900: 9.375rem;
+}

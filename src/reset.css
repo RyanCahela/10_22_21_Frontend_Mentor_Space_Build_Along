@@ -20,9 +20,23 @@ picture {
   margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
 body {
   line-height: 1.5;
-  min-height: 100vh
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
 }
 
 /* make images easier to work with */
@@ -58,6 +72,7 @@ p {
 
 /* remove default list styles if using custom class */
 ul[class] {
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
