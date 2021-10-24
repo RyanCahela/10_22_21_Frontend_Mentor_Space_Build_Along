@@ -30,3 +30,34 @@ Utility Classes
   border: 0;
 }
 
+/**************************
+Colors
+**************************/
+
+.bg-dark { 
+  background-color: hsl( var(--color-dark) / var(--bg-alpha, 1));
+}
+
+.bg-accent {
+  background-color: hsl( var(--color-accent) / var(--bg-alpha, 1));
+}
+
+.bg-white { 
+  background-color: hsl( var(--color-white) / var(--bg-alpha, 1));
+}
+
+
+.font-dark {
+  color: hsl( var(--color-dark) );
+}
+
+.font-accent {
+  color: hsl( var(--color-accent) );
+}
+
+.font-white {
+  color: hsl( var(--color-white) );
+}
+
+
+
