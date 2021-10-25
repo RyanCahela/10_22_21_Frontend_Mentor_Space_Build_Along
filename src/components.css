@@ -42,13 +42,21 @@ Components
 
 .primary-navigation a {
   text-decoration: none;
-  padding-block: 2rem;
+  font-family: var(--ff-sans-condensed);
 }
 
 .primary-navigation a > span {
   font-weight: 700;
-  color: hsl( var(--color-white) / 0.25);
   margin-right: 1rem;
+}
+
+.tabs {
+  font-family: var(--ff-sans-condensed);
+  color: hsl( var(--color-accent) );
+}
+
+.tabs a {
+  text-decoration: none;
 }
 
 @keyframes pulse-outline {

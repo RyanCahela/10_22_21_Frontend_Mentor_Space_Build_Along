@@ -53,6 +53,7 @@
           <p><span class="font-accent">HSL</span> 230, 35%, 7%</p>
         </div>
       </section>
+
       <!--********************************************
         TYPOGRAPHY
       **********************************************-->
@@ -142,6 +143,7 @@
           </div>
         </div>
       </section>
+
       <!--********************************************
         INTERACTIVE ELEMENTS
       **********************************************-->
@@ -149,11 +151,11 @@
         <h2 class="numbered-title"><span>03</span> Interactive Elements</h2>
         <!--navigation-->
         <div>
-          <nav>
-            <ul class="primary-navigation | uppercase | flex | font-white | underline-indicators">
-              <li class=""><a href="#" class="letter-spacing-2 selected"><span>01</span>Active</a></li>
-              <li class=""><a href="#" class="letter-spacing-2" onHover=true><span>02</span>Hovered</a></li>
-              <li class=""><a href="#" class="letter-spacing-2"><span>03</span>Idle</a></li>
+          <nav class="primary-navigation">
+            <ul class="| uppercase | flex | font-white | underline-indicators">
+              <li class="active"><a href="#" class="letter-spacing-2"><span>01</span>Active</a></li>
+              <li><a href="#" class="letter-spacing-2" onHover=true><span>02</span>Hovered</a></li>
+              <li><a href="#" class="letter-spacing-2"><span>03</span>Idle</a></li>
             </ul>
           </nav>
         </div>
@@ -166,7 +168,13 @@
           </div>
           <div style="margin-bottom: 50vh">
             <!-- Tabs -->
-
+            <div class="tabs">
+              <ul class="flex | underline-indicators" style="--underline-padding-block: 0 0.75rem">
+                <li class="active"><a href="#" class="uppercase">Moon</a></li>
+                <li><a href="#" class="uppercase">Mars</a></li>
+                <li><a href="#" class="uppercase">Europa</a></li>
+              </ul>
+            </div>
 
             <!-- Dots -->
 

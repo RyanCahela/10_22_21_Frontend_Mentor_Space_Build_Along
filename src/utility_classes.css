@@ -89,13 +89,19 @@ Typography
   font-weight: 700;
 }
 
-.underline-indicators a:hover:not(.selected),
-.underline-indicators a:focus:not(.selected) {
-  border-bottom: 2px solid hsl( var(--color-white) / 0.25);
+.underline-indicators > * {
+  padding-block: var(--underline-padding-block, 2rem 2rem);
+  border-bottom: 0.2rem solid transparent;
 }
 
-.underline-indicators .selected {
-  border-bottom: 2px solid hsl( var(--color-white) );
+.underline-indicators > *:hover,
+.underline-indicators > *:focus {
+  border-bottom: 0.2rem solid hsl( var(--color-white) / 0.5);
+}
+
+.underline-indicators > .active {
+  border-bottom: 2px solid hsl( var(--color-white) / 1);
+  color: hsl( var(--color-white));
 }
 
 
