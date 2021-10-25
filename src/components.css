@@ -51,12 +51,19 @@ Components
 }
 
 .tabs {
-  font-family: var(--ff-sans-condensed);
-  color: hsl( var(--color-accent) );
 }
 
-.tabs a {
-  text-decoration: none;
+.tabs button {
+  background-color: transparent;
+  font-family: var(--ff-sans-condensed);
+  font-size: var(--fs-400);
+  color: hsl( var(--color-accent) );
+  outline: none;
+  border-color: transparent;
+}
+
+.tabs button:hover {
+  cursor: pointer;
 }
 
 @keyframes pulse-outline {
