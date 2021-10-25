@@ -50,9 +50,6 @@ Components
   margin-right: 1rem;
 }
 
-.tabs {
-}
-
 .tabs button {
   background-color: transparent;
   font-family: var(--ff-sans-condensed);
@@ -60,10 +57,6 @@ Components
   color: hsl( var(--color-accent) );
   outline: none;
   border-color: transparent;
-}
-
-.tabs button:hover {
-  cursor: pointer;
 }
 
 @keyframes pulse-outline {

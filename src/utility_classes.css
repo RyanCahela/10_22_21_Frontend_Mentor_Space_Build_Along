@@ -90,6 +90,7 @@ Typography
 }
 
 .underline-indicators > * {
+  cursor: pointer;
   padding-block: var(--underline-padding-block, 2rem 2rem);
   border-bottom: 0.2rem solid transparent;
 }
@@ -99,7 +100,8 @@ Typography
   border-bottom: 0.2rem solid hsl( var(--color-white) / 0.5);
 }
 
-.underline-indicators > .active {
+.underline-indicators > .active,
+.underline-indicators > [aria-selected="true"] {
   border-bottom: 2px solid hsl( var(--color-white) / 1);
   color: hsl( var(--color-white));
 }
