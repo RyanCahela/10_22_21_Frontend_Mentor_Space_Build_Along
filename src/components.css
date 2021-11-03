@@ -11,7 +11,7 @@ Components
 **************************/
 
 .large-button {
-  display: grid;
+  display: inline-grid;
   border-radius: 50%;
   place-items: center;
   text-decoration: none;

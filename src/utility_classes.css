@@ -22,6 +22,20 @@ Utility Classes
   max-width: 80rem;
 }
 
+.grid-container {
+  display: grid;
+  column-gap: var(--container-gap, 2rem);
+  grid-template-columns: minmax(2em, 1fr) minmax(0, 40rem) minmax(0, 40rem) minmax(2em, 1fr);
+}
+
+.grid-container > *:first-child {
+  grid-column: 2;
+}
+
+.grid-container > *:last-child {
+  grid-column: 3;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -107,9 +121,9 @@ Typography
 }
 
 /**************************
-page backgrounds
+pages
 **************************/
-.bg-earth-image {
+.home {
   background-image: url("./assets/home/background-home-desktop.jpg");
   background-size: cover;
 }
