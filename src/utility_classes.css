@@ -106,6 +106,14 @@ Typography
   color: hsl( var(--color-white));
 }
 
+/**************************
+page backgrounds
+**************************/
+.bg-earth-image {
+  background-image: url("./assets/home/background-home-desktop.jpg");
+  background-size: cover;
+}
+
 
 
 

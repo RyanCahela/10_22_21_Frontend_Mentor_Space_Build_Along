@@ -36,9 +36,30 @@ Components
   z-index: -1;
 }
 
+.logo {
+  align-items: center;
+  position: relative;
+}
+
+.logo::after {
+  content: "";
+  border-bottom: 1px solid dimgray;
+  width: 431px;
+  position: absolute;
+  right: -500px;
+}
+
 .primary-navigation {
   --gap: 8rem;
+  margin-left: auto;
 }
+
+.primary-navigation ul {
+  background-color:hsl( var(--color-white) / 0.2);
+  backdrop-filter: blur(100px);
+  justify-content: space-around;
+}
+
 
 .primary-navigation a {
   text-decoration: none;
@@ -73,9 +94,38 @@ Components
   background-color: hsl( var(--color-white) / 0.5);
 }
 
-/* .dot-indicators > *:active, */
+.dot-indicators > *:active,
 .dot-indicators > [aria-selected="true"] {
   background-color: hsl( var(--color-white) / 1);
+}
+
+.number-indicators {
+  font-family: var(--ff-serif);
+}
+
+.number-indicators > * {
+  aspect-ratio: 1;
+  border: 1px solid hsl( var(--color-white) / 0.25);
+  border-radius: 50%;
+  color: hsl( var(--color-white) / 1);
+  cursor: pointer;
+  font-size: var(--fs-600);
+  padding-block: 1.5rem;
+  padding-inline: 2rem;
+  background-color: transparent;
+}
+
+.number-indicators > *:hover,
+.number-indicators > *:focus {
+  border-color: hsl( var(--color-white) / 1);
+}
+
+.number-indicators > .active,
+.number-indicators > *:active,
+.number-indicators > [aria-selected="true"]
+{
+  background-color: hsl( var(--color-white) / 1);
+  color: hsl( var(--color-dark));
 }
 
 @keyframes pulse-outline {
